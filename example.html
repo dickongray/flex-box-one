@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox 1</title>
+	<link href='https://fonts.googleapis.com/css?family=Raleway%7COpen+Sans' rel='stylesheet' type='text/css'/>
+	<link rel="stylesheet" href="assets/style.css">
+	<link rel="stylesheet" href="assets/flex.css">
+</head>
+<body>
+<div class="conainer">
+<!-- Table of Contents-->
+	<header>
+		<h1>Flexbox</h1>
+			<h3>Table of Contents</h3>
+			<ul class="Contents">
+				<li><a href="#intro">Introduction |</a></li>
+				<li><a href="#create">Flex Container |</a></li>
+				<li><a href="#direction">Flex Direction |</a></li>
+				<li><a href="#wrap">Flex Wrap |</a></li>
+				<li><a href="#space">Justify-Content |</a></li>
+				<li><a href="#order">Changing the Order |</a></li>
+				<li><a href="#grow">Flex Grow|</a></li>
+				<li><a href="#other">Other flexbox resources |</a></li>
+			</ul>
+	</header>
+<!-- Intro -->
+	<section>
+		<div id="intro">
+			<h2>Introduction</h2>
+			<p>Flexbox is a remarkable layout feature that's redefined how web designers build responsive layouts.</p>
+			<p>With flexbox you can change the direction, size, and order of elements.</p>
+		<p>You can change navigation links, content columns and images, regardless of their original size and order in the HTML.</p>
+		</div><!-- /intro -->
+	</section>
+<!-- Flex Container -->
+	<section>
+		<div id="create">
+			<h2>Adding flex to the container</h2>
+			<div class="container containerone">
+				<div class="item-1 item">Item 1</div>
+				<div class="item-2 item">Item 2</div>
+				<div class="item-3 item">Item 3</div>
+				<div class="item-4 item">Item 4</div>
+				<div class="item-5 item">Item 5</div>
+				<div class="item-6 item">Item 6</div>
+			</div>
+<!-- CODE SNIPPET-->
+<pre class="prettyprint"
+>// This is the css.
+.container{
+	display: flex;
+	height: 300px;
+}
+</pre>
+		</div><!-- /create -->
+	</section>
+<!-- Flex Direction -->
+	<section>
+		<div id="direction">
+			<h2>Flexbox direction</h2>
+			<p>Control the direction of your flexbox layout, with the flex-direction property.</p>
+			<div class="containertwo">
+				<div class="item-1 item">Item 1</div>
+				<div class="item-2 item">Item 2</div>
+				<div class="item-3 item">Item 3</div>
+				<div class="item-4 item">Item 4</div>
+				<div class="item-5 item">Item 5</div>
+				<div class="item-6 item">Item 6</div>
+			</div>
+
+<!-- CODE SNIPPET -->
+<pre class="prettyprint"
+>// This is the css.
+.containertwo{
+	display: flex;
+	flex-direction: row-reverse;
+}
+</pre>
+<!-- /CODE SNIPPET -->
+		<p>Examples of the flex-direction options</p>
+			<ul class="Contents">
+				<li>row |</li><!-- /defualt -->
+				<li>column |</li>
+				<li>column-reverse</li>
+			</ul>
+		</div><!-- /direction -->
+	</section>
+<!--  Wrapping -->
+	<section>
+		<div id="wrap">
+			<h2>Flexbox Wrap</h2>
+			<div class="containerthree">
+				<div class="item-1 item">Item 1</div>
+				<div class="item-2 item">Item 2</div>
+				<div class="item-3 item">Item 3</div>
+				<div class="item-4 item">Item 4</div>
+				<div class="item-5 item">Item 5</div>
+				<div class="item-6 item">Item 6</div>
+			</div>
+
+<!-- CODE SNIPPET-->
+<pre class="prettyprint"
+>// This is the css.
+.containerthree{
+	display: flex;
+	flex-wrap: wrap;
+}
+</pre>
+<!-- /CODE SNIPPET-->
+	<p>Examples of flex-wrap with column</p>
+			<ul class="Contents">
+				<li>add flex-direction: column; |</li><!-- /defualt -->
+				<li>height: 280px; |</li>
+				<li>add more items</li>
+			</ul>
+<!-- CODE SNIPPET-->
+<pre class="prettyprint"
+>// This is the css.
+.containerthree{
+	display: flex;
+	flex-wrap: wrap;
+	add flex-direction: column;
+	height: 280px;
+}
+<!-- /CODE SNIPPET-->
+</pre>
+		</div><!-- /wrap -->
+	</section>
+<!-- Space -->
+	<section>
+		<div id="space">
+			<h2>Justify-Content</h2>
+			<p>The justify-content property lets you control the position and alignment of flex Items on the main axis and how space should be distributed in a flex container.</p>
+			<div class="containertwo">
+				<div class="item-1 item">Item 1</div>
+				<div class="item-2 item">Item 2</div>
+				<div class="item-3 item">Item 3</div>
+				<div class="item-4 item">Item 4</div>
+				<div class="item-5 item">Item 5</div>
+				<div class="item-6 item">Item 6</div>
+			</div>
+
+<!-- CODE SNIPPET -->
+<pre class="prettyprint"
+>// This is the css.
+.containerfour{
+	display: flex;
+	justify-content: flex-end;
+}
+</pre>
+<!-- /CODE SNIPPET -->
+		<p>Examples of justify-content</p>
+			<ul class="Contents">
+				<li>justify-content: center; |</li>
+				<li> justify-content: space-between;|</li>
+				<li>justify-content: space-around;</li>
+			</ul>
+		</div><!-- /space -->
+	</section>
+<!--  Changing the Order -->
+	<section>
+		<div id="order">
+			<h2>Order Items</h2>
+			<p>By default, flex items are laid out in the order they appear in the source code. Use the `order` property to change the order of any flex item.</p>
+			<div class="containerfive">
+				<div class="item-1 item">Item 1</div>
+				<div class="item-2 item">Item 2</div>
+				<div class="item-3 item">Item 3</div>
+				<div class="item-4 item">Item 4</div>
+				<div class="item-5 item">Item 5</div>
+				<div class="item-6a item">Item 6</div>
+			</div>
+
+<!-- CODE SNIPPET -->
+<pre class="prettyprint"
+>// This is the css.
+.item-6{
+	order: -1;
+}
+</pre>
+<!-- /CODE SNIPPET -->
+		</div><!-- /space -->
+	</section>
+<!--  Growing -->
+	<section>
+		<div id="grow">
+			<h2>Flex Grow</h2>
+			<p>With flexbox you can make flex items grow or shrink in relation to other flex items and the available space inside the flex container.</p>
+			<div class="containersix">
+				<div class="item-1 item items">Item 1</div>
+				<div class="item-2 item items">Item 2</div>
+				<div class="item-3 item items">Item 3</div>
+				<div class="item-4 item items">Item 4</div>
+				<div class="item-5 item items">Item 5</div>
+				<div class="item-6 item items">Item 6</div>
+			</div>
+
+<!-- CODE SNIPPET -->
+<pre class="prettyprint"
+>// This is the css.
+.containersix{
+	display: flex;
+	flex-wrap: wrap;
+}
+.items{
+	flex-grow:1;
+}
+</pre>
+<!-- /CODE SNIPPET -->	
+<section>
+	<div id="other">
+		<h2>Other flexbox resources</h2>
+			<ul class="Contents">
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" target="blank">MDN: CSS Flexible Box |</a></li>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/" target="blank">MDN: Flexible Box Layout |</a></li>
+				<li><a href="http://caniuse.com/#search=flexbox" target="blank">BROWSER SUPPORT |</a></li>
+				<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox" target="blank">CSS-TRICKS GUIDE TO FLEXBOX |</a></li>
+				<li><a href="https://scotch.io/demos/visual-guide-to-css3-flexbox-flexbox-playground" target="blank">FLEXPLAYGROUND |</a></li>
+				<li><a href="https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties" target="blank">VISUAL GUIDE |</a></li>
+			</ul>
+	</div>
+</section>
+
+</div><!-- /conainer -->
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</body>
+</html>

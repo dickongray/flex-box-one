@@ -1,0 +1,101 @@
+/* ================================= 
+  Base Styles of page
+==================================== */
+body {
+	font-size: 1.35em;
+	font-family:  'Open Sans', Helvetica, sans-serif;
+	color:#fff;
+	background: #e8e9e9;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+/*typography*/
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-family: 'Raleway', sans-serif;
+	color: #323232;
+}
+h1 {
+	font-size: 60px;
+	padding-top: 1em;
+	line-height: 60px;
+	text-align: center;
+}
+h2 {
+	font-size: 48px;
+	padding-top: 55px;
+	line-height: 60px;
+	text-align: center;
+}
+h3 {
+	font-size: 32px;
+	line-height: 54px;
+}
+p {
+    font-size: 1.5em;
+    line-height: 1.1em;
+    color: #323232;
+	margin: 20px;
+	margin-left: 50px;
+	margin-right: 50px; 
+}
+.text {
+	font-size: 1.5em;
+    line-height: 1.1em;
+    color: #fff;
+	margin: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+/*links*/
+a, a:hover, a:focus, a:active, a.active {
+    outline: 0 none;
+    text-decoration: none;
+    color: #FA7F00;
+}
+a:hover {
+	color: #334960;
+}
+ul {
+	display: flex;
+	text-decoration: none;
+	flex-flow: row wrap;
+	padding: 1em;
+}
+li {
+	list-style: none;
+	color: #323232;
+}
+header {
+	background: #fff;
+	padding-right: 1em; 
+	padding-left: 1em;
+	padding-bottom: 1em;
+}
+section {
+	background: #fff;
+	padding-right: 1em; 
+	padding-left: 1em;
+	padding-bottom: 1em;
+}
+/* ================================= 
+  flex box
+==================================== */
+.container, .containerone {
+	padding: 10px;
+	background: #fff;
+  	border-radius: 5px;
+	margin: 45px auto;
+  	box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+}
+.item, .item01, .item02, .item03, .item04  {
+	color: #fff;
+	padding: 15px;
+	margin: 5px;	
+	background: #FA7F00;
+	border-radius: 3px;
+}
+
+
+
+

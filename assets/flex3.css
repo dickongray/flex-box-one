@@ -1,0 +1,25 @@
+/* ================================= 
+Flexbox Stage Container One 
+==================================== */
+.containerone, .main-nav{
+ 	display: flex;
+ 	flex-direction: column;
+ 	flex-wrap: wrap;
+}
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+.containerone{
+ 	flex-direction: row;
+ 	justify-content: space-between;
+}
+
+	
+
+}
+
+@media (min-width: 1025px) {
+
+}

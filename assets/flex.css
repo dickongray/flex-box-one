@@ -1,0 +1,55 @@
+/* ================================= 
+Flexbox Stage Container One 
+==================================== */
+.containerone{
+	display: flex;
+	height: 300px;
+}
+/* ================================= 
+Flexbox Stage Container Two 
+==================================== */
+.containertwo{
+	display: flex;
+	flex-direction: row-reverse;
+}
+/* ================================= 
+Flexbox Stage Container Three 
+==================================== */
+.containerthree{
+	display: flex;
+	flex-wrap: wrap;
+}
+/* ================================= 
+Flexbox Stage Container Four
+==================================== */
+.containerfour{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+/* ================================= 
+Flexbox Stage Container Five
+==================================== */
+.containerfive{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.item-6a{
+	order: -1;
+}
+/* ================================= 
+Flexbox Stage Container Six
+==================================== */
+.containersix{
+	display: flex;
+	flex-wrap: wrap;
+}
+.items{
+	flex-grow:1;
+}
+
+
+
+
+
