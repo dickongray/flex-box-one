@@ -8,7 +8,7 @@ RESOURCES:
 	MDN:
 		https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes
 		https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_flexbox_to_lay_out_web_applications
-	BROWSER SUPPORT:
+	BRWOSER SUPPORT:
 		http://caniuse.com/#search=flexbox
 	CSS-TRICKS GUIDE TO FLEXBOX:
 		https://css-tricks.com/snippets/css/a-guide-to-flexbox
@@ -31,7 +31,7 @@ FLEXBOX LAYOUT:
 
 	Every direct child of a flex container is called a flex item; there can be any number of flex items inside a flex container.
 
-	Once the children are flex items, you can take advantage of flexboxes powerful alignment properties.
+	Once the children are flex items, you can take advantage of flexbox's powerful alignment properties.
 
 	Flexbox follows two axes that determine the layout direction of flex items: main axis and cross axis.
 
@@ -44,7 +44,6 @@ FLEXBOX LAYOUT:
 	The default main-start and main-end direction of the main axis is left-to-right.
 
 	The the default direction of the cross axis is top-to-bottom.
-
 
 
 

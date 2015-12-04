@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox 2</title>
+	<link href='https://fonts.googleapis.com/css?family=Raleway%7COpen+Sans' rel='stylesheet' type='text/css'/>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/flex2.css">
+</head>
+<body>
+<div class="conainer">
+<!-- Table of Contents-->
+	<header>
+		<h1>Flexbox 2</h1>
+			<h3>Table of Contents</h3>
+			<ul class="Contents">
+				<li><a href="#basis">Flex basis |</a></li>
+				<li><a href="#flex">Flex |</a></li>
+				<li><a href="#crossaxis">Cross Axis |</a></li>
+				<li><a href="#center">Center Content |</a></li>
+				<li><a href="#other">Other flexbox resources</a></li>
+			</ul>
+	</header>
+<!--  -->
+	<section>
+		<div id="basis">
+			<h2>Layouts with flex-basis</h2>
+			<p>Flex-basis property gives you even more control over flex items. </p>
+			<div class="containerone">
+				<div class="item-1 item01">
+					Item 1
+					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt debitis, mollitia facilis ut quia, cumque dolor libero tempore at rem nisi. </p>
+				</div>
+				<div class="item-2 item01">
+					Item 2
+					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt debitis, mollitia facilis ut quia, cumque dolor libero tempore at rem nisi.</p><p class="text">Recusandae sit laudantium enim suscipit possimus tempora, facilis libero.</p>
+				</div>
+				<div class="item-3 item01">
+					Item 3
+					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+				<div class="item-4 item01">
+					Item 4
+					<p class="text">Lorem ipsum dolor sit amet.</p>
+				</div>
+			</div><!--/containerone  -->
+		</div><!--/layouts -->
+<!-- CODE SNIPPET-->
+<pre class="prettyprint"
+>// This is the css.
+.containerone{
+ 	display: flex;
+ 	flex-wrap: wrap;
+}
+.item01 {
+	flex-grow: 1;
+	flex-basis: 100px;
+}
+</pre>
+			<ul class="Contents">
+				<li>Flex and flex-basis apply to flex items only. |</li>
+				<li>Flex-basis specifies the initial main size of a flex item. |</li>
+				<li>The second and third values are optional in the flex shorthand. |</li>
+				<li>Set the initial size wanted to the flex items, then flexbox evenly distributes the free space according that size.</li>
+			</ul>
+		</div><!-- / -->
+	</section>
+<!--  -->
+	<section>
+		<div id="flex">
+			<h2>Flex</h2>
+			<p>Flex shorthand property, intelligently sets flexbox values when you don't specify them.</p>
+			<div class="containertwo">
+				<div class="item-1b item02">Item 1</div>
+				<div class="item-2b item02">Item 2</div>
+				<div class="item-3b item02">Item 3</div>
+				<div class="item-4b item02">Item 4</div>
+				<div class="item-5b item02">Item 5</div>
+				<div class="item-6b item02">Item 6</div>
+			</div>
+
+<!-- CODE SNIPPET -->
+<pre class="prettyprint"
+>// This is the css.
+.containertwo{
+	display: flex;
+ 	flex-wrap: wrap;
+}
+.item-2b {
+	flex: 1 200px;
+	flex-grow: 2;
+}
+</pre>
+<!-- /CODE SNIPPET -->
+			<ul class="Contents">
+				<li>Flex is the shorthand for flex-grow, flex-basis and flex-shrink. |</li><!-- /defualt -->
+				<li>Using only one number value for flex sets the flex-grow value of an item. |</li>
+				<li>The second and third values are optional in the flex shorthand. |</li>
+				<li>Setting only one number value for flex automatically sets the flex-basis value to 0.</li>
+			</ul>
+		</div><!-- /flex -->
+	</section>
+<!--   -->
+	<section>
+		<div id="crossaxis">
+			<h2>Aligning Items on the Cross Axis</h2>
+			<div class="containerthree">
+				<div class="item-1c item03">
+				Item 1
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt debitis, mollitia facilis ut quia, cumque dolor libero tempore at rem nisi.</p><p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt debitis, mollitia facilis ut quia, cumque dolor libero tempore at rem nisi.</p></div>
+				<div class="item-2c item03">
+				Item 2
+				<p class="text">Lorem ipsum.</p></div>
+				<div class="item-3c item03">
+				Item 3
+				<p class="text">Lorem ipsum dolor sit amet.</p></div>
+				<div class="item-4c item03">
+				Item 4
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+			</div>
+
+<!-- CODE SNIPPET-->
+<pre class="prettyprint"
+>// This is the css.
+.containerthree{
+	display: flex;
+ 	flex-wrap: wrap;
+ 	height: 150px;
+ 	align-items: flex-start;
+}
+</pre>
+<!-- /CODE SNIPPET-->
+	<p>Examples of the flex-direction options</p>
+			<ul class="Contents">
+				<li>The align-items property applies to flex containers only. |</li><!-- / -->
+				<li>The align-self property applies to flex items only.|</li>
+				<li>align-items, aligns flex items vertically in the flex container. |</li>
+				<li>Align all flex items to the start of the cross axis. align-items: flex-start;. |</li>
+				<li>align-items: flex-end; packs the items toward the end of the cross axis. |</li>
+				<li>align-items: center; perfectly centers items along the cross axis. |</li>
+				<li>align-self: flex-start; aligns a flex item to the start of the cross axis. |</li>
+				<li>align-self: flex-end; aligns a flex item to the end of the cross axis. |</li>
+				<li>align-self: center; aligns a flex item to the center of the cross axis. |</li>
+			</ul>
+		</div><!-- /crossaxis -->
+	</section>
+<!--  -->
+	<section>
+		<div id="center">
+			<h2>Centering content</h2>
+			<p>Three ways to center-align elements using flexbox.</p>
+			<div class="containerfour">
+				<div class="item-1d item04">Item 1 <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+			</div>
+		</div>
+
+<!-- CODE SNIPPET -->
+<pre class="prettyprint"
+>// Option one.
+.containerfour{
+	display: flex;
+ 	min-height: 50vh;
+ 	justify-content: center;
+ 	align-items: center;
+}
+</pre>
+<!-- /CODE SNIPPET -->
+<!-- CODE SNIPPET -->
+<pre class="prettyprint"
+>// Option two.
+.containerfour{
+ 	justify-content: center;
+}
+.item04{
+	align-self: center;
+}
+</pre>
+<!-- /CODE SNIPPET -->
+<!-- CODE SNIPPET -->
+<pre class="prettyprint"
+>// Option three.
+.item04{
+	margin: auto;
+}
+</pre>
+<!-- /CODE SNIPPET -->
+		
+	</section>
+<!--   -->
+	<section>
+		<div id="">
+			<h2></h2>
+			<p></p>
+			<div class="containerfive">
+				<div class="item-1 item">Item 1</div>
+				<div class="item-2 item">Item 2</div>
+				<div class="item-3 item">Item 3</div>
+				<div class="item-4 item">Item 4</div>
+				<div class="item-5 item">Item 5</div>
+				<div class="item-6 item">Item 6</div>
+			</div>
+
+<!-- CODE SNIPPET -->
+<pre class="prettyprint"
+>// This is the css.
+
+</pre>
+<!-- /CODE SNIPPET -->
+		</div><!-- /space -->
+	</section>
+<!--   -->
+	<section>
+		<div id="">
+			<h2></h2>
+			<p></p>
+			<div class="containerfive">
+				<div class="item-1 item">Item 1</div>
+				<div class="item-2 item">Item 2</div>
+				<div class="item-3 item">Item 3</div>
+				<div class="item-4 item">Item 4</div>
+				<div class="item-5 item">Item 5</div>
+				<div class="item-6 item">Item 6</div>
+			</div>
+
+<!-- CODE SNIPPET -->
+<pre class="prettyprint"
+>// This is the css.
+
+</pre>
+<!-- /CODE SNIPPET -->
+		</div><!-- /space -->
+	</section>
+<section>
+	<div id="other">
+		<h2>Other flexbox resources</h2>
+			<ul class="Contents">
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" target="blank">MDN: CSS Flexible Box |</a></li>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/" target="blank">MDN: Flexible Box Layout |</a></li>
+				<li><a href="http://caniuse.com/#search=flexbox" target="blank">BROWSER SUPPORT |</a></li>
+				<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox" target="blank">CSS-TRICKS GUIDE TO FLEXBOX |</a></li>
+				<li><a href="https://scotch.io/demos/visual-guide-to-css3-flexbox-flexbox-playground" target="blank">FLEXPLAYGROUND |</a></li>
+				<li><a href="https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties" target="blank">VISUAL GUIDE |</a></li>
+				<li><a href="http://flexboxfroggy.com/" target="blank">FROGGY GAME</a></li>
+			</ul>
+	</div>
+</section>
+</div><!-- /conainer -->
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</body>
+</html>

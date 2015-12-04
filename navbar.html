@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Navbar</title>
+	<link href='https://fonts.googleapis.com/css?family=Raleway%7COpen+Sans' rel='stylesheet' type='text/css'/>
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/flexbox.css">
+</head>
+<body>
+<div class="conainer">
+<!-- Table of Contents-->
+	<header>
+		<h1>Flexbox</h1>
+			<h3>Table of Contents</h3>
+			<ul class="Contents">
+				<li><a href="#direction">Flexbox Navbar |</a></li>
+				<li><a href="#other">Other flexbox resources |</a></li>
+			</ul>
+	</header>
+<!-- Flex Direction -->
+	<section>
+		<div id="direction">
+			<h2>Flexbox Navbar</h2>
+			<p>How to make a responsive navbar with flexbox</p>
+			<header class="main-header">
+				<h1 class="name"><a href="#">logo</a></h1>
+				<ul class="main-nav">
+					<li><a href="#">work</a></li>
+					<li><a href="#">about</a></li>
+					<li><a href="#">new</a></li>
+					<li><a href="#">contact</a></li>
+				</ul>
+			</header><!--/.main-header-->
+<!-- CODE SNIPPET -->
+<pre class="prettyprint"
+>// This is the css.
+@media (min-width: 769px) {
+
+.main-header,
+.main-nav {
+	display: flex;
+}
+.main-header {
+	flex-direction: column;
+	align-items: center;
+}
+}
+@media (min-width: 1025px) {
+
+.main-header {
+	flex-direction: row;
+	justify-content: space-between;
+}
+}
+</pre>
+<!-- /CODE SNIPPET -->
+		</div><!-- /direction -->
+	</section>
+
+<section>
+	<div id="other">
+		<h2>Other flexbox resources</h2>
+			<ul class="Contents">
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" target="blank">MDN: CSS Flexible Box</a></li>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/" target="blank">MDN: Flexible Box Layout</a></li>
+				<li><a href="http://caniuse.com/#search=flexbox" target="blank">BROWSER SUPPORT</a></li>
+				<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox" target="blank">CSS-TRICKS GUIDE TO FLEXBOX</a></li>
+				<li><a href="https://scotch.io/demos/visual-guide-to-css3-flexbox-flexbox-playground" target="blank">FLEXPLAYGROUND</a></li>
+				<li><a href="https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties" target="blank">VISUAL GUIDE</a></li>
+				<li><a href="http://flexboxfroggy.com/" target="blank">FROGGY GAME</a></li>
+			</ul>
+	</div>
+</section>
+
+</div><!-- /conainer -->
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</body>
+</html>
